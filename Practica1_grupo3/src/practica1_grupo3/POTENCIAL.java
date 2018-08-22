@@ -28,4 +28,12 @@ public class POTENCIAL
         return Math.pow(valor, 3);
     }
     
+    public double raizCubica(double valor)
+    {
+         float retorno=(float) Math.pow(valor, 1.0/3.0);
+
+
+        return retorno;
+    }
+    
 }
