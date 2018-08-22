@@ -23,4 +23,14 @@ public class POTENCIAL
         int resultado = (int) Math.pow(NumeroBase, 2);
         return resultado;
     }
+	
+	float RaizCuadrada(float numero){
+		
+		
+		System.out.println("Ingrese el radicando: ");
+		float resultado1 = (float) Math.sqrt(numero);
+		System.out.println("La raiz cuadrada de "+ numero +  " es: " + resultado1);
+		
+		return resultado1;
+	}
 }
