@@ -17,7 +17,13 @@ public class POTENCIAL
         int resultado = Pot(NumeroBase);
         System.out.println(NumeroBase + " elevado a la 2 es igual a " + resultado);
     }
+    double Multiplicacion(double n1,double n2){
+        return n1*n2;
+    }
     
+    double Division(double n1,double n2){
+        return n1/n2;
+    }
     int Pot (int NumeroBase)
     {
         int resultado = (int) Math.pow(NumeroBase, 2);
