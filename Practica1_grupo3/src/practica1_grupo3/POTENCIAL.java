@@ -23,4 +23,9 @@ public class POTENCIAL
         int resultado = (int) Math.pow(NumeroBase, 2);
         return resultado;
     }
+    
+    public double potenciaCUBICA(double valor){
+        return Math.pow(valor, 3);
+    }
+    
 }
