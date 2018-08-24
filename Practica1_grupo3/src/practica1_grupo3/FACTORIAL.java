@@ -10,7 +10,7 @@ package practica1_grupo3;
  * @author Javier
  */
 public class FACTORIAL {
-      public double factorial (int numero){
+      public double factorial (double numero){
         double factorial = 1;     
         
           while ( numero!=0) {
