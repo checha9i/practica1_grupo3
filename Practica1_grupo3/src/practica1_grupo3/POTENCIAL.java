@@ -11,19 +11,10 @@ package practica1_grupo3;
  */
 public class POTENCIAL 
 {
-    
-    public POTENCIAL (int NumeroBase)
+    public int POTENCIAL (int NumeroBase)
     {
         int resultado = Pot(NumeroBase);
-        System.out.println(NumeroBase + " elevado a la 2 es igual a " + resultado);
-    }
-    double Multiplicacion(double n1,double n2){
-        return n1*n2;
-    }
-    
-    double Division(double n1,double n2){
-        if(n2==0)return -1;
-        return n1/n2;
+        return resultado;
     }
     int Pot (int NumeroBase)
     {
@@ -31,26 +22,26 @@ public class POTENCIAL
         return resultado;
     }
     
+    double Multiplicacion(double n1,double n2){
+        return n1*n2;
+    }
+    double Division(double n1,double n2){
+        if(n2==0) return -1;
+        return n1/n2;
+    }
+   
     public double potenciaCUBICA(double valor){
         return Math.pow(valor, 3);
     }
-    
 	
-    float RaizCuadrada(float numero){
-
-
-            System.out.println("Ingrese el radicando: ");
-            float resultado1 = (float) Math.sqrt(numero);
-            System.out.println("La raiz cuadrada de "+ numero +  " es: " + resultado1);
-
-            return resultado1;
+    public float RaizCuadrada(double numero){
+        float resultado1 = (float) Math.round(Math.sqrt(numero));
+        return resultado1;
     }
 
     public double raizCubica(double valor)
     {
-         float retorno=(float) Math.pow(valor, 1.0/3.0);
-
-
+        float retorno=(float) Math.round(Math.cbrt(valor)); 
         return retorno;
     }
 }
